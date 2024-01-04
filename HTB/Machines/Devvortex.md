@@ -1,7 +1,11 @@
 ***Key Take Aways***
+
 *Vhost enumeration*
+
 *MSF*
+
 *password reuse*
+
 *how to cause NIX crashes*
 
 
@@ -98,6 +102,7 @@ after loggig in navigate to settings>administrator templates.
 replace any php template with php-reverse-shell.php and access the same via a GET call for a shell to be returned .
 
 ** User Own **
+
 since we do know the local db user and password, we can reuse them and login to the local mysql db for further recon.
 
 ```
@@ -134,4 +139,5 @@ $ kill -SIGSEGV *PID*
 $ sudo /usr/bin/apport-cli -c /var/crash/*crashfile*
 ```
 when the apportcli loads press V to view the crash file and once it loads enter ```:!/bin/bash ``` to get the root bash access
+
 Now we can retrieve the root flag
