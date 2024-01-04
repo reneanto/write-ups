@@ -97,11 +97,11 @@ run
 ```
 it drops the local db user and password which we can use to login at /administration endpoint mentioned in robots.txt .
 
-after loggig in navigate to settings>administrator templates.
+after logging in navigate to settings>administrator templates.
 
 replace any php template with php-reverse-shell.php and access the same via a GET call for a shell to be returned .
 
-** User Own **
+**User Own**
 
 since we do know the local db user and password, we can reuse them and login to the local mysql db for further recon.
 
