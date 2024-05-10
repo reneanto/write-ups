@@ -51,7 +51,7 @@ PORT     STATE SERVICE       REASON  VERSION
 |_    Connection: close
 ```
 # Node Red RCE
-[image](https://github.com/reneanto/write-ups/assets/44943249/5def2930-6800-4a94-a52e-0a938e3747ed)
+![image](https://github.com/reneanto/write-ups/assets/44943249/5def2930-6800-4a94-a52e-0a938e3747ed)
 
 https://quentinkaiser.be/pentesting/2018/09/07/node-red-rce/
 
