@@ -1,1 +1,6 @@
-#KEY TAKE AWAYS
+# KEY TAKE AWAYS
+* NFS
+* ADCS
+
+# NMAP
+
