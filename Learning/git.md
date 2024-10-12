@@ -15,5 +15,5 @@ git add .
 
 git commit -m 'report.md'
 
-git push
+
 ```
