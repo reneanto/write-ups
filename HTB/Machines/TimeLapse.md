@@ -1,6 +1,6 @@
 
 
-```
+```text
 PORT      STATE SERVICE        REASON
 53/tcp    open  domain         syn-ack ttl 127
 88/tcp    open  kerberos-sec   syn-ack ttl 127
