@@ -1,6 +1,6 @@
-## Connect git via cli
+# Connect git via cli
 
-```
+```text
 git clone repo
 
 git remove remote origin
