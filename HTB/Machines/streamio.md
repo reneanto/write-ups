@@ -58,7 +58,7 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 ## Web
 
-* Dirbusting
+* Dirbusting streamio.htb
 
 ```text
 [21:41:37] 301 -  147B  - /js  ->  https://streamio.htb/js/                 
