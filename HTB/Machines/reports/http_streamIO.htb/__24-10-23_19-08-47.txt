@@ -1,0 +1,5 @@
+# Dirsearch started Wed Oct 23 19:09:04 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://streamIO.htb/ -x 404 -r
+
+403   312B   http://streamIO.htb/%2e%2e//google.com
+403   312B   http://streamIO.htb/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+403   312B   http://streamIO.htb/\..\..\..\..\..\..\..\..\..\etc\passwd
