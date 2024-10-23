@@ -19,7 +19,7 @@ git commit -m 'report.md'
 
 ## error-1
 
-```console
+```bash
 #if the following error happens during git commit
 
 #On branch main
