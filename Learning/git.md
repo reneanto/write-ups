@@ -20,13 +20,13 @@ git commit -m 'report.md'
 ## error-1
 
 ```console
-# if the following error happens during git commit
+#if the following error happens during git commit
 
-# On branch main
-# Your branch and 'origin/main' have diverged,
-# and have 2 and 1 different commits each, respectively.
+#On branch main
+#Your branch and 'origin/main' have diverged,
+#and have 2 and 1 different commits each, respectively.
 
-# then merge the origin and main with the following command
+#then merge the origin and main with the following command
 
 git merge origin/main
 
