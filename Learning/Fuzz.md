@@ -23,4 +23,10 @@ export URL https://target/dir/FUZZ.php # replace php with desired filetype disco
 
 wfuzz -Z -c -z file,/usr/share/wordlists/seclists/Discovery/Web-Content/raft-large-words.txt   --hc 404 -u $URL
 
+#ffuf
+
+ffuf -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-large-files.txt  -fc 404 -u http://target/fuzz
+
+ffuf -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-large-files.txt -fc 404 -recursion -u http://target//FUZZ
+
 ```
