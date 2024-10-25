@@ -11,6 +11,7 @@ machine write ups for references
 * [Blackfield](/HTB/Machines/Blackfield.md)
 * [Return](/HTB/Machines/Return.md)
 * [Cicada](/HTB/Machines/Cicada.md)
+* [Chemistry](/HTB/Machines/chemistry.md)
 
 ## Vulnlabs
 
