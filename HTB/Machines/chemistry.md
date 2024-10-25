@@ -77,7 +77,7 @@ PORT     STATE  SERVICE REASON         VERSION
 * Portforwarding the 8080 http service
 
 ```bash
-ssh -l 8000:127.0.0.1:8080 rosa@IP
+ssh -l 9001:127.0.0.1:8080 rosa@IP
 ```
 
 * Enumerating the service on 8080.
