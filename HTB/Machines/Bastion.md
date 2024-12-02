@@ -50,5 +50,4 @@ Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft
 * smbclient to list shares
 
 ![[Bastion-shaers.png]]
-
 * Checking out backups we got some interesting files
