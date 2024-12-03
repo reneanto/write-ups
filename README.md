@@ -27,3 +27,10 @@ machine write ups for references
 ## TryHackMe
 
 * [Traverse](/THM/Traverse.md)
+## Learning
+
+* [Fuzz](/Learning/Fuzz)
+* [git](/Learning/git)
+* [Pivoting](/Learning/Pivoting)
+
+

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Learning/Pivoting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Pivoting"
             }
           }
         ]
@@ -175,6 +175,8 @@
   },
   "active": "67b850fc71b3fc6d",
   "lastOpenFiles": [
+    "README.md",
+    "HTB/Machines/challenges/pdfy.md",
     "HTB/Machines/Bastion.md",
     "HTB/Machines/Blackfield.md",
     "Screenshot From 2024-12-01 19-58-48.png",
