@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTB/Machines/Jeeves.md",
+                "file": "Vulnlabs/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Jeeves"
+              "title": "README"
             }
           }
         ]
@@ -176,6 +176,8 @@
   "active": "67b850fc71b3fc6d",
   "lastOpenFiles": [
     "README.md",
+    "Vulnlabs/README.md",
+    "HTB/Machines/Jeeves.md",
     "Learning/Pivoting.md",
     "HTB/Machines/challenges/pdfy.md",
     "HTB/Machines/Bastion.md",
