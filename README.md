@@ -13,6 +13,7 @@ machine write ups for references
 * [Cicada](/HTB/Machines/Cicada.md)
 * [Chemistry](/HTB/Machines/chemistry.md)
 * [Bastion](/HTB/Machines/Bastion.md)
+* [Jeeves](/HTB/Machines/Jeeves)
 
 ## Vulnlabs
 
