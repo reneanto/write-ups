@@ -50,5 +50,12 @@ mdb-export auth_users
 
 ## 7zip
 
-* 7z x "Access Control.zip" -p"<password>"
+* 7z x "Access Control.zip" -p"password"
 
+## PST
+
+```bash
+sudo apt install pst-utils
+readpst "Access Control.pst"
+cat "Access Control.mbox"
+```
