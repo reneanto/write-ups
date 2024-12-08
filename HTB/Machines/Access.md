@@ -59,3 +59,10 @@ sudo apt install pst-utils
 readpst "Access Control.pst"
 cat "Access Control.mbox"
 ```
+
+## Telnet 23 User Own
+
+```bash
+telnet $IP 23
+cat Desktop/user.txt
+```
