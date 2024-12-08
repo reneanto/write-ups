@@ -32,8 +32,7 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 ## FTP
 
-  * use ```bin``` to transfer data in binary rather than ASCII (typical windows things) 
-
+* use ```bin``` to transfer data in binary rather than ASCII (typical windows things)
 
 ![Web](./images/Access-ftp.png)
 
