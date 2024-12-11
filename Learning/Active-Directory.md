@@ -34,4 +34,5 @@ Enter-PSSession -ComputerName DC-01 -Credential $Cred
 
 
 *References*
+
 https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/08-powershell-remoting?view=powershell-7.4&viewFallbackFrom=powershell-7.2
