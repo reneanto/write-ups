@@ -4,17 +4,18 @@ machine write ups for references
 
 ## HackTheBox
 
-* [Timelapse](/HTB/Machines/TimeLapse.md)
-* [Escape](/HTB/Machines/Escape.md)
-* [Manager](/HTB/Machines/Manager.md)
-* [Devvortex](/HTB/Machines/Devvortex.md)
-* [Blackfield](/HTB/Machines/Blackfield.md)
-* [Return](/HTB/Machines/Return.md)
-* [Cicada](/HTB/Machines/Cicada.md)
-* [Chemistry](/HTB/Machines/chemistry.md)
-* [Bastion](/HTB/Machines/Bastion.md)
-* [Jeeves](/HTB/Machines/Jeeves)
-* [Access](/HTB/Machines/Access.md)
+* [Timelapse](/HTB/Machines/TimeLapse.md)![win](/HTB/Machines/images/windows.png)
+* [Escape](/HTB/Machines/Escape.md)![win](/HTB/Machines/images/windows.png)
+* [Manager](/HTB/Machines/Manager.md)![win](/HTB/Machines/images/windows.png)
+* [Devvortex](/HTB/Machines/Devvortex.md)![win](/HTB/Machines/images/windows.png)
+* [Blackfield](/HTB/Machines/Blackfield.md)![win](/HTB/Machines/images/windows.png)
+* [Return](/HTB/Machines/Return.md)![win](/HTB/Machines/images/windows.png)
+* [Cicada](/HTB/Machines/Cicada.md)![win](/HTB/Machines/images/windows.png)
+* [Chemistry](/HTB/Machines/chemistry.md)![win](/HTB/Machines/images/windows.png)
+* [Bastion](/HTB/Machines/Bastion.md)![win](/HTB/Machines/images/windows.png)
+* [Jeeves](/HTB/Machines/Jeeves)![win](/HTB/Machines/images/windows.png)
+* [Access](/HTB/Machines/Access.md)![win](/HTB/Machines/images/windows.png)
+* [Support](/HTB/Machines/Support.md)![win](/HTB/Machines/images/windows.png)
 
 ## Vulnlabs
 
@@ -29,10 +30,9 @@ machine write ups for references
 ## TryHackMe
 
 * [Traverse](/THM/Traverse.md)
+
 ## Learning
 
 * [Fuzz](/Learning/Fuzz)
 * [git](/Learning/git)
 * [Pivoting](/Learning/Pivoting)
-
-
