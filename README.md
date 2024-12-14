@@ -16,7 +16,7 @@ machine write ups for references
 * [Jeeves](/HTB/Machines/Jeeves)![win](/HTB/Machines/images/windows.png)
 * [Access](/HTB/Machines/Access.md)![win](/HTB/Machines/images/windows.png)
 * [Support](/HTB/Machines/Support.md)![win](/HTB/Machines/images/windows.png)
-* [Unrested](/HTB/Machines/Unrested.md)![nix](/HTB/machines/images/nix.png)
+* [Unrested](/HTB/Machines/Unrested.md)![nix](/HTB/Machines/images/nix.png)
 
 ## Vulnlabs
 
