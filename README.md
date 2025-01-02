@@ -17,6 +17,7 @@ machine write ups for references
 * [Access](/HTB/Machines/Access.md)![win](/HTB/Machines/images/windows.png)
 * [Support](/HTB/Machines/Support.md)![win](/HTB/Machines/images/windows.png)
 * [Unrested](/HTB/Machines/Unrested.md)![nix](/HTB/Machines/images/nix.png)
+*  [Broker](/HTB/Machines/Broker.md)![nix](/HTB/Machines/images/nix.png)
 
 ## Vulnlabs
 
