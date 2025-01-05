@@ -54,4 +54,7 @@ machine write ups for references
 * [Safebuffer-vulnad](https://github.com/safebuffer/vulnerable-AD)
 * [MS-ADDS](https://learn.microsoft.com/en-us/training/paths/active-directory-domain-services/)
 * [MS-PSRemoting](https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/08-powershell-remoting?view=powershell-7.4&viewFallbackFrom=powershell-7.2)
-* 
+* [Lainkusanagi-OSCP-list](https://docs.google.com/spreadsheets/d/18weuz_Eeynr6sXFQ87Cd5F0slOj9Z6rt/edit?gid=487240997#gid=487240997)
+* [places-of-interest-stealing-NTLM](https://osandamalith.com/2017/03/24/places-of-interest-in-stealing-netntlm-hashes/)
+* [WADComs](https://wadcoms.github.io/)
+* [Paul-Jerimy-Security-Cert-Roadmap](https://pauljerimy.com/security-certification-roadmap/)
