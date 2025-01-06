@@ -27,6 +27,7 @@ machine write ups for references
 * [Delegate](/Vulnlabs/Machines/Delegate.md)
 * [Sync](/Vulnlabs/Machines/sync.md)
 * [Hybrid](/Vulnlabs/Chains/Hybrid.md)
+* [Breach](/Vulnlabs/Machines/Breach.md)![win](/HTB/Machines/images/windows.png)
 * [Tengu](/Vulnlabs/Chains/tengu.md)
 * [Trusted](/Vulnlabs/Chains/Trusted.md)
 

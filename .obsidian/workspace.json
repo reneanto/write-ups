@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vulnlabs/Machines/Breach.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Breach"
+              "title": "README"
             }
           }
         ],
@@ -204,10 +204,10 @@
   },
   "active": "8605c19fadb05015",
   "lastOpenFiles": [
+    "Vulnlabs/Machines/Breach.md",
     "Vulnlabs/Images/breach-root.png",
     "Vulnlabs/Images/breach-reverse-shell.png",
     "Vulnlabs/Images/breach-mssql.png",
-    "Vulnlabs/Machines/Breach.md",
     "Vulnlabs/Images/breach-svc-mssql-cme.png",
     "Vulnlabs/Images/breach-bloodhound.png",
     "Vulnlabs/Images/breach-julia-cme.png",
@@ -227,7 +227,6 @@
     "HTB/Machines/Magic.md",
     "HTB/Machines/ScriptKiddie.md",
     "HTB/Machines/images/scriptkiddie-web-apk.png",
-    "HTB/Machines/images/Screenshot From 2024-12-16 18-53-40.png",
     "HTB/Machines/Unrested.md",
     "HTB/Machines/images/windows.ico",
     "HTB/Machines/Support.md",
