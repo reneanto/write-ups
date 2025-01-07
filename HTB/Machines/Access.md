@@ -1,6 +1,6 @@
 # Access
 
-## NMAP
+## NMAP [[NMAP]]
 
 ```console
 PORT   STATE SERVICE REASON
