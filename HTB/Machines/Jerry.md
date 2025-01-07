@@ -2,7 +2,7 @@
 
 ## NMAP
 
-* Nmap result [[NMAP]]
+* Nmap result
 
 ```console
 PORT STATE SERVICE REASON VERSION
