@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTB/Machines/Jerry.md",
+                "file": "Vulnlabs/Machines/Escape.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Jerry"
+              "title": "Escape"
             }
           }
         ],
@@ -218,10 +218,15 @@
   },
   "active": "855569d55e7f3252",
   "lastOpenFiles": [
+    "Vulnlabs/Images/escape-system.png",
+    "Vulnlabs/Images/escape-bpv.png",
+    "Vulnlabs/Images/escap-uac.png",
+    "Vulnlabs/Images/escape-profile.png",
+    "Vulnlabs/Images/escape-user.png",
+    "HTB/Machines/Jerry.md",
     "HTB/Machines/Access.md",
     "HTB/Machines/Blackfield.md",
     "HTB/Machines/Bastion.md",
-    "HTB/Machines/Jerry.md",
     "HTB/Machines/Broker.md",
     "Vulnlabs/Machines/baby.md",
     "README.md",
@@ -232,17 +237,13 @@
     "Vulnlabs/Images/breach-mssql.png",
     "Vulnlabs/Images/breach-svc-mssql-cme.png",
     "Vulnlabs/Images/breach-bloodhound.png",
-    "Vulnlabs/Images/breach-julia-cme.png",
-    "Vulnlabs/Images/breach-ntlm-steal.png",
     "Vulnlabs/Images",
     "Learning/Active-Directory.md",
     "THM/README.md",
     "Vulnlabs/README.md",
     "HTB/Machines/Heist.md",
-    "HTB/Machines/images/broker-privs.png",
     "htb.md",
     "HTB/Machines/TimeLapse.md",
-    "HTB/Machines/images/broker-rev.png",
     "HTB/Machines/Magic.md",
     "HTB/Machines/ScriptKiddie.md",
     "HTB/Machines/Unrested.md",
