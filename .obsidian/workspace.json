@@ -8,62 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8c8d7755365dd138",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HTB/Machines/Broker.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Broker"
-            }
-          },
-          {
-            "id": "6290cf3f3c97dfd9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Vulnlabs/Machines/baby.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "baby"
-            }
-          },
-          {
-            "id": "8605c19fadb05015",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HTB/Machines/Access.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Access"
-            }
-          },
-          {
-            "id": "855569d55e7f3252",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Vulnlabs/Machines/Escape.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Escape"
-            }
-          },
-          {
             "id": "6e20dccf9f633c6c",
             "type": "leaf",
             "state": {
@@ -76,9 +20,23 @@
               "icon": "lucide-file",
               "title": "soccer"
             }
+          },
+          {
+            "id": "7846f3ccf4995491",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HTB/Machines/Networked.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Networked"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -230,10 +188,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6e20dccf9f633c6c",
+  "active": "b733ae93d73f97c9",
   "lastOpenFiles": [
-    "Vulnlabs/Machines/Escape.md",
     "HTB/Machines/soccer.md",
+    "HTB/Machines/Networked.md",
+    "Vulnlabs/Machines/Escape.md",
     "Vulnlabs/Images/escape-system.png",
     "Vulnlabs/Images/escape-bpv.png",
     "Vulnlabs/Images/escap-uac.png",
