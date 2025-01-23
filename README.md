@@ -60,3 +60,4 @@ machine write ups for references
 * [places-of-interest-stealing-NTLM](https://osandamalith.com/2017/03/24/places-of-interest-in-stealing-netntlm-hashes/)
 * [WADComs](https://wadcoms.github.io/)
 * [Paul-Jerimy-Security-Cert-Roadmap](https://pauljerimy.com/security-certification-roadmap/)
+* [java-rmi](https://ppn.snovvcrash.rocks/pentest/perimeter/java-rmia)

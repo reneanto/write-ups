@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTB/Machines/Networked.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Networked"
+              "title": "README"
             }
           }
         ],
@@ -188,7 +188,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b733ae93d73f97c9",
+  "active": "7846f3ccf4995491",
   "lastOpenFiles": [
     "HTB/Machines/soccer.md",
     "HTB/Machines/Networked.md",
