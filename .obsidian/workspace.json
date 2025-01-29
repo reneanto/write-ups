@@ -188,8 +188,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b733ae93d73f97c9",
+  "active": "a393eb2a8d23c3a9",
   "lastOpenFiles": [
+    "2025-01-29.md",
+    "README.md",
     "Untitled",
     "HTB/Machines/soccer.md",
     "HTB/Machines/Networked.md",
@@ -205,7 +207,6 @@
     "HTB/Machines/Bastion.md",
     "HTB/Machines/Broker.md",
     "Vulnlabs/Machines/baby.md",
-    "README.md",
     "HTB/Machines/images/jerry-shell.png",
     "Vulnlabs/Machines/Breach.md",
     "Vulnlabs/Images/breach-root.png",
