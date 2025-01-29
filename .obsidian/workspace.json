@@ -188,8 +188,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7846f3ccf4995491",
+  "active": "b733ae93d73f97c9",
   "lastOpenFiles": [
+    "Untitled",
     "HTB/Machines/soccer.md",
     "HTB/Machines/Networked.md",
     "Vulnlabs/Machines/Escape.md",
@@ -226,7 +227,6 @@
     "Learning/Fuzz.md",
     "HTB/Machines/Jeeves.md",
     "Learning/Pivoting.md",
-    "HTB/Machines/challenges/pdfy.md",
-    "HTB/Machines/streamio.md"
+    "HTB/Machines/challenges/pdfy.md"
   ]
 }
