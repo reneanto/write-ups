@@ -130,3 +130,5 @@ IPC$            READ            Remote IPC
 NETLOGON        READ            Logon server share 
 SYSVOL          READ            Logon server share
 ```
+
+* Now we can use [revbshell](https://github.com/bitsadmin/revbshell/tree/master) to overwrite the `login.vbs` script at `SYSVOL`
