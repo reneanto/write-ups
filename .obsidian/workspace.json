@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tengu.md",
+                "file": "Vulnlabs/Chains/Tengu 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tengu"
+              "title": "Tengu 1"
             }
           }
         ],
@@ -233,10 +233,18 @@
   },
   "active": "8f31e66d1862cea7",
   "lastOpenFiles": [
-    "Vulnlabs/Images/tengu-nodered.png",
+    "Vulnlabs/Chains/tengu.md",
+    "Vulnlabs/Chains/Tengu 1.md",
+    "Vulnlabs/Chains/Trusted.md",
+    "Vulnlabs/README.md",
+    "README.md",
+    "Learning/Active-Directory.md",
+    "Learning/Pivoting.md",
+    "Learning/git.md",
+    "Learning/Fuzz.md",
+    "Vulnlabs/Chains/Images/tengu-nodered.png",
     "Vulnlabs/Images/Screenshot From 2025-02-04 13-14-25.png",
     "Vulnlabs/Machines/baby2.md",
-    "Tengu.md",
     "Vulnlabs/Machines/baby.md",
     "HTB/Machines/Buff.md",
     "HTB/Machines/TimeLapse.md",
@@ -246,31 +254,23 @@
     "HTB/Machines/images/Screenshot From 2025-02-01 08-19-39.png",
     "HTB/Machines/images/buff-admin.png",
     "HTB/Machines/images/Screenshot From 2025-02-01 10-21-59.png",
-    "README.md",
     "2025-01-29.md",
     "Untitled",
     "HTB/Machines/Networked.md",
     "Vulnlabs/Machines/Escape.md",
-    "Vulnlabs/Images/escape-system.png",
-    "Vulnlabs/Images/escape-bpv.png",
-    "Vulnlabs/Images/escap-uac.png",
-    "Vulnlabs/Images/escape-profile.png",
-    "Vulnlabs/Images/escape-user.png",
+    "Vulnlabs/Chains/Images/escape-system.png",
+    "Vulnlabs/Chains/Images/escape-bpv.png",
+    "Vulnlabs/Chains/Images/escap-uac.png",
+    "Vulnlabs/Chains/Images/escape-profile.png",
     "HTB/Machines/Jerry.md",
     "HTB/Machines/Blackfield.md",
     "HTB/Machines/Bastion.md",
     "HTB/Machines/Broker.md",
     "Vulnlabs/Machines/Breach.md",
-    "Vulnlabs/Images",
-    "Learning/Active-Directory.md",
+    "Vulnlabs/Chains/Images",
     "THM/README.md",
-    "Vulnlabs/README.md",
     "HTB/Machines/Heist.md",
     "htb.md",
-    "HTB/Machines/Magic.md",
-    "HTB/Machines/ScriptKiddie.md",
-    "HTB/Machines/Unrested.md",
-    "HTB/Machines/images/windows.ico",
-    "HTB/Machines/Support.md"
+    "HTB/Machines/images/windows.ico"
   ]
 }

@@ -36,14 +36,14 @@ xfreerdp /u:guest /v:<IP>
 * we can naviget to `C:\Windows\system32\cmd.exe` , download it and then rename it as a known application such as `msedge` to evade the UAC
 * since right click is disabled we can use f2
 
-![user](../Images/escape-user.png)
+![user](escape-user.png)
 ## System
 
 * Evaluating the file system we find a RDP+  profile at `C:/_admin/profiles.xml` 
-![profiles](../Images/escape-profile.png)
+![profiles](escape-profile.png)
 * we can load this onto the rdp.exe at `C:/Program Files(x86)/` but need to `cp` the profiles.exe to KioskUser0's Downloads folder
 * once loaded we can run [bullets_password_view.exe](https://www.nirsoft.net/utils/bullets_password_view.html) to uncover the password from the rdp by editing the profile
-![bpv](../Images/escape-bpv.png)
+![bpv](escape-bpv.png)
 
 * Then we can use cmd as admin via
 
@@ -51,7 +51,7 @@ xfreerdp /u:guest /v:<IP>
 runas /user:admin cmd.exe
 ```
 
-![bpv](../Images/escap-uac.png)
+![bpv](escap-uac.png)
 * Then we quickly notice that the User is under UAC
 * To bypass UAC we have to get the UAC interaction menu since we are on RDP and hence we can do
 
@@ -59,4 +59,4 @@ runas /user:admin cmd.exe
 start-process cmd.exe -verb runas
 ```
 
-![bpv](../Images/escape-system.png)
+![bpv](escape-system.png)
