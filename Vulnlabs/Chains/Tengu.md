@@ -17,7 +17,7 @@ Open 10.10.185.167:1880
 python3 noderedsh.py http://$IP:1080 --user "" --password ""
 ```
 
-![nodered-svc](tengu-nodered.png)
+![nodered-svc](./Images/tengu-nodered.png)
 
 ### nodered_svc
 
