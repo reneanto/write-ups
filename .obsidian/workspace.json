@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vulnlabs/Chains/Tengu.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tengu"
+              "title": "README"
             }
           }
         ],
@@ -231,10 +231,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a393eb2a8d23c3a9",
+  "active": "8f31e66d1862cea7",
   "lastOpenFiles": [
-    "README.md",
     "Vulnlabs/Chains/Tengu.md",
+    "README.md",
     "Vulnlabs/Chains/tengu.md",
     "Vulnlabs/Chains/Trusted.md",
     "Vulnlabs/README.md",
