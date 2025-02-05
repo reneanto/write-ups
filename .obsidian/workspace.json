@@ -4,81 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "f3291008296c4c2f",
+        "id": "3e0b486bba03e802",
         "type": "tabs",
         "children": [
           {
-            "id": "6e20dccf9f633c6c",
+            "id": "dbd0e5835ed6c1c7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vulnlabs/Machines/baby.md",
+                "file": "Vulnlabs/Chains/Tengu.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "baby"
-            }
-          },
-          {
-            "id": "4811364fa9761a75",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Vulnlabs/Machines/baby2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "baby2"
-            }
-          },
-          {
-            "id": "7846f3ccf4995491",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HTB/Machines/Access.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Access"
-            }
-          },
-          {
-            "id": "3f9d96cc67ee41dd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HTB/Machines/Buff.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Buff"
-            }
-          },
-          {
-            "id": "8f31e66d1862cea7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
+              "title": "Tengu"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -135,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1dd79b51462ae18a",
@@ -233,15 +177,23 @@
   },
   "active": "a393eb2a8d23c3a9",
   "lastOpenFiles": [
-    "Vulnlabs/Chains/Tengu.md",
-    "Vulnlabs/Chains/Images/tengu-bhqc.png",
-    "Vulnlabs/Chains/Images/tengu-sql-pwd.png",
-    "Vulnlabs/Chains/Images/tengu-sql.png",
-    "Vulnlabs/Chains/Images/Screenshot From 2025-02-04 16-28-51.png",
-    "Vulnlabs/Chains/Images/Screenshot From 2025-02-04 16-31-04.png",
-    "Vulnlabs/Chains/Images/Screenshot From 2025-02-05 11-09-03.png",
+    "Vulnlabs/Chains/Images/Screenshot From 2025-02-05 13-06-41.png",
+    "Vulnlabs/Chains/Images/Screenshot From 2025-02-05 13-08-13.png",
+    "Vulnlabs/Chains/Images/Screenshot From 2025-02-05 13-17-48.png",
+    "Vulnlabs/Chains/Images/tengu-sqladmin.png",
+    "Vulnlabs/Chains/Images/Screenshot From 2025-02-05 12-39-03.png",
+    "Vulnlabs/Chains/Images/tengu-getST.png",
+    "Vulnlabs/Chains/Images/Screenshot From 2025-02-05 12-35-44.png",
+    "Vulnlabs/Chains/Images/tengu-delegation.png",
+    "Vulnlabs/Chains/Images/Screenshot From 2025-02-05 12-26-31.png",
+    "Vulnlabs/Chains/Images/tengu-gmsa.png",
+    "Vulnlabs/Chains/Images/Screenshot From 2025-02-05 12-10-59.png",
+    "Vulnlabs/Machines/baby2.md",
     "HTB/Machines/Buff.md",
+    "HTB/Machines/Access.md",
+    "Vulnlabs/Machines/baby.md",
     "README.md",
+    "Vulnlabs/Chains/Tengu.md",
     "Vulnlabs/Chains/tengu.md",
     "Vulnlabs/Chains/Trusted.md",
     "Vulnlabs/README.md",
@@ -249,15 +201,8 @@
     "Learning/Pivoting.md",
     "Learning/git.md",
     "Learning/Fuzz.md",
-    "Vulnlabs/Chains/Images/tengu-nodered.png",
-    "Vulnlabs/Images/Screenshot From 2025-02-04 13-14-25.png",
-    "Vulnlabs/Machines/baby2.md",
-    "Vulnlabs/Machines/baby.md",
     "HTB/Machines/TimeLapse.md",
     "HTB/Machines/soccer.md",
-    "HTB/Machines/Access.md",
-    "HTB/Machines/images/buff-user.png",
-    "HTB/Machines/images/Screenshot From 2025-02-01 08-19-39.png",
     "2025-01-29.md",
     "Untitled",
     "HTB/Machines/Networked.md",

