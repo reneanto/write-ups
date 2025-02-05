@@ -20,7 +20,7 @@ machine write ups for references
 * [Jerry](/HTB/Machines/Jerry.md)![win](/HTB/Machines/images/windows.png)
 * [Forest](/HTB/Machines/Forest.md)![win](/HTB/Machines/images/windows.png)
 * [Unrested](/HTB/Machines/Unrested.md)![nix](/HTB/Machines/images/nix.png)
-*  [Broker](/HTB/Machines/Broker.md)![nix](/HTB/Machines/images/nix.png)
+* [Broker](/HTB/Machines/Broker.md)![nix](/HTB/Machines/images/nix.png)
 
 ## Vulnlabs
 
