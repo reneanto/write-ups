@@ -18,6 +18,7 @@ machine write ups for references
 * [Support](/HTB/Machines/Support.md)![win](/HTB/Machines/images/windows.png)
 * [Heist](/HTB/Machines/Heist.md)![win](/HTB/Machines/images/windows.png)
 * [Jerry](/HTB/Machines/Jerry.md)![win](/HTB/Machines/images/windows.png)
+* [Forest](/HTB/Machines/Forest.md)![win](/HTB/Machines/images/windows.png)
 * [Unrested](/HTB/Machines/Unrested.md)![nix](/HTB/Machines/images/nix.png)
 *  [Broker](/HTB/Machines/Broker.md)![nix](/HTB/Machines/images/nix.png)
 
