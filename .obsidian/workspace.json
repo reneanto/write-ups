@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3e0b486bba03e802",
+        "id": "c1197dd47f1d9952",
         "type": "tabs",
         "children": [
           {
-            "id": "e072a274ec4d709f",
+            "id": "b851b3ae4f346f13",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTB/Machines/Forest.md",
+                "file": "HTB/Machines/Active.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Forest"
+              "title": "Active"
             }
           }
         ]
@@ -174,8 +174,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e072a274ec4d709f",
+  "active": "b851b3ae4f346f13",
   "lastOpenFiles": [
+    "HTB/Machines/Forest.md",
+    "HTB/Machines/Active.md",
     "HTB/Machines/images/Forest-DC.png",
     "HTB/Machines/images/Screenshot From 2025-02-05 18-14-22.png",
     "HTB/Machines/images/Forest-User.png",
@@ -186,9 +188,7 @@
     "HTB/Machines/images/Forest-Root.png",
     "HTB/Machines/images/Screenshot From 2025-02-05 17-13-53.png",
     "HTB/Machines/images/Screenshot From 2025-02-05 17-14-38.png",
-    "HTB/Machines/images/Screenshot From 2025-02-05 17-53-32.png",
     "README.md",
-    "HTB/Machines/Forest.md",
     "Vulnlabs/Chains/Tengu.md",
     "Vulnlabs/Machines/baby2.md",
     "HTB/Machines/Buff.md",
