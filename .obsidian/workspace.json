@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vulnlabs/Chains/Tengu.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tengu"
+              "title": "README"
             }
           }
         ],
@@ -231,10 +231,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8f31e66d1862cea7",
+  "active": "a393eb2a8d23c3a9",
   "lastOpenFiles": [
-    "README.md",
     "Vulnlabs/Chains/Tengu.md",
+    "Vulnlabs/Chains/Images/tengu-bhqc.png",
+    "Vulnlabs/Chains/Images/tengu-sql-pwd.png",
+    "Vulnlabs/Chains/Images/tengu-sql.png",
+    "Vulnlabs/Chains/Images/Screenshot From 2025-02-04 16-28-51.png",
+    "Vulnlabs/Chains/Images/Screenshot From 2025-02-04 16-31-04.png",
+    "Vulnlabs/Chains/Images/Screenshot From 2025-02-05 11-09-03.png",
+    "HTB/Machines/Buff.md",
+    "README.md",
     "Vulnlabs/Chains/tengu.md",
     "Vulnlabs/Chains/Trusted.md",
     "Vulnlabs/README.md",
@@ -246,22 +253,15 @@
     "Vulnlabs/Images/Screenshot From 2025-02-04 13-14-25.png",
     "Vulnlabs/Machines/baby2.md",
     "Vulnlabs/Machines/baby.md",
-    "HTB/Machines/Buff.md",
     "HTB/Machines/TimeLapse.md",
     "HTB/Machines/soccer.md",
     "HTB/Machines/Access.md",
     "HTB/Machines/images/buff-user.png",
     "HTB/Machines/images/Screenshot From 2025-02-01 08-19-39.png",
-    "HTB/Machines/images/buff-admin.png",
-    "HTB/Machines/images/Screenshot From 2025-02-01 10-21-59.png",
     "2025-01-29.md",
     "Untitled",
     "HTB/Machines/Networked.md",
     "Vulnlabs/Machines/Escape.md",
-    "Vulnlabs/Chains/Images/escape-system.png",
-    "Vulnlabs/Chains/Images/escape-bpv.png",
-    "Vulnlabs/Chains/Images/escap-uac.png",
-    "Vulnlabs/Chains/Images/escape-profile.png",
     "HTB/Machines/Jerry.md",
     "HTB/Machines/Blackfield.md",
     "HTB/Machines/Bastion.md",
@@ -270,7 +270,6 @@
     "Vulnlabs/Chains/Images",
     "THM/README.md",
     "HTB/Machines/Heist.md",
-    "htb.md",
     "HTB/Machines/images/windows.ico"
   ]
 }

