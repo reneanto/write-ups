@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTB/Machines/Support.md",
+                "file": "Learning/git.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Support"
+              "title": "git"
             }
           }
         ],
@@ -191,6 +191,7 @@
   },
   "active": "603a4d1b3ad4e10d",
   "lastOpenFiles": [
+    "HTB/Machines/Support.md",
     "Untitled.md",
     "HTB/Machines/Monteverde.md",
     "HTB/Machines/Forest.md",
@@ -227,7 +228,6 @@
     "HTB/Machines/Jerry.md",
     "HTB/Machines/Blackfield.md",
     "HTB/Machines/Bastion.md",
-    "HTB/Machines/Broker.md",
     "Vulnlabs/Chains/Images",
     "HTB/Machines/images/windows.ico"
   ]
