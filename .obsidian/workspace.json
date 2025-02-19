@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTB/Machines/Monteverde.md",
+                "file": "HTB/Machines/Support.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Monteverde"
+              "title": "Support"
             }
           }
         ],
@@ -191,9 +191,10 @@
   },
   "active": "603a4d1b3ad4e10d",
   "lastOpenFiles": [
+    "Untitled.md",
+    "HTB/Machines/Monteverde.md",
     "HTB/Machines/Forest.md",
     "HTB/Machines/Active.md",
-    "HTB/Machines/Monteverde.md",
     "HTB/Machines/images/Forest-DC.png",
     "HTB/Machines/images/Screenshot From 2025-02-05 18-14-22.png",
     "HTB/Machines/images/Forest-User.png",
@@ -227,7 +228,6 @@
     "HTB/Machines/Blackfield.md",
     "HTB/Machines/Bastion.md",
     "HTB/Machines/Broker.md",
-    "Vulnlabs/Machines/Breach.md",
     "Vulnlabs/Chains/Images",
     "HTB/Machines/images/windows.ico"
   ]

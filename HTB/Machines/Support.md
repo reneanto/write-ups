@@ -14,16 +14,17 @@ PORT      STATE SERVICE          REASON
 445/tcp   open  microsoft-ds     syn-ack ttl 127
 464/tcp   open  kpasswd5         syn-ack ttl 127
 593/tcp   open  http-rpc-epmap   syn-ack ttl 127
+636/tcp   open  ldapssl          syn-ack ttl 127
 3268/tcp  open  globalcatLDAP    syn-ack ttl 127
 3269/tcp  open  globalcatLDAPssl syn-ack ttl 127
 5985/tcp  open  wsman            syn-ack ttl 127
 9389/tcp  open  adws             syn-ack ttl 127
 49664/tcp open  unknown          syn-ack ttl 127
-49667/tcp open  unknown          syn-ack ttl 127
-49676/tcp open  unknown          syn-ack ttl 127
-49688/tcp open  unknown          syn-ack ttl 127
-49693/tcp open  unknown          syn-ack ttl 127
-49715/tcp open  unknown          syn-ack ttl 127
+49668/tcp open  unknown          syn-ack ttl 127
+49678/tcp open  unknown          syn-ack ttl 127
+49690/tcp open  unknown          syn-ack ttl 127
+49707/tcp open  unknown          syn-ack ttl 127
+
 ```
 
 * *NMAP*
