@@ -40,7 +40,7 @@ machine write ups for references
 ## Learning
 
 * [Fuzz](/Learning/Fuzz)
-* [git](/Learning/git)
+* [git](/Learning/git.md)
 * [Pivoting](/Learning/Pivoting)
 
 ## Awesome References
