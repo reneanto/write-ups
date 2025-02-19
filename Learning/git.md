@@ -1,11 +1,12 @@
-# Connect git via cli
+# Github
+##  Git authentication via CLI
 
 ```text
 git clone repo
 
-git remove remote origin
+git remote remove origin
 
-git remote add origin https://git-token/owner/repo
+git remote add origin https://git-token@github.com/owner/repo
 
 git push --set-upstream origin main
 
