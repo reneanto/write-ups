@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Learning/Pivoting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Pivoting"
             }
           }
         ],
@@ -191,6 +191,7 @@
   },
   "active": "603a4d1b3ad4e10d",
   "lastOpenFiles": [
+    "README.md",
     "Learning/git.md",
     "HTB/Machines/Support.md",
     "Untitled.md",
@@ -207,7 +208,6 @@
     "HTB/Machines/images/Forest-Root.png",
     "HTB/Machines/images/Screenshot From 2025-02-05 17-13-53.png",
     "HTB/Machines/images/Screenshot From 2025-02-05 17-14-38.png",
-    "README.md",
     "Vulnlabs/Chains/Tengu.md",
     "Vulnlabs/Machines/baby2.md",
     "HTB/Machines/Buff.md",
