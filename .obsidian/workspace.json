@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python.md",
+                "file": "Learning/Python.md",
                 "mode": "source",
                 "source": false
               },
@@ -189,10 +189,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "baa6e3671a7ee7ab",
+  "active": "b733ae93d73f97c9",
   "lastOpenFiles": [
     "Learning/Mobile-Testing.md",
-    "Python.md",
+    "Learning/Python.md",
     "Learning/Pivoting.md",
     "README.md",
     "Learning/git.md",
