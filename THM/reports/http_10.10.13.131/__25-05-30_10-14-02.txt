@@ -1,0 +1,63 @@
+# Dirsearch started Fri May 30 10:16:26 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.13.131/ -x 404
+
+403   213B   http://10.10.13.131/.ht_wsr.txt
+403   216B   http://10.10.13.131/.htaccess.bak1
+403   216B   http://10.10.13.131/.htaccess.orig
+403   218B   http://10.10.13.131/.htaccess.sample
+403   216B   http://10.10.13.131/.htaccess.save
+403   214B   http://10.10.13.131/.htaccess_sc
+403   217B   http://10.10.13.131/.htaccess_extra
+403   216B   http://10.10.13.131/.htaccess_orig
+403   214B   http://10.10.13.131/.htaccessBAK
+403   215B   http://10.10.13.131/.htaccessOLD2
+403   214B   http://10.10.13.131/.htaccessOLD
+403   206B   http://10.10.13.131/.htm
+403   207B   http://10.10.13.131/.html
+403   216B   http://10.10.13.131/.htpasswd_test
+403   212B   http://10.10.13.131/.htpasswds
+403   213B   http://10.10.13.131/.httr-oauth
+403   211B   http://10.10.13.131/.user.ini
+301   242B   http://10.10.13.131/administrator    -> REDIRECTS TO: http://10.10.13.131/administrator/
+200    31B   http://10.10.13.131/administrator/cache/
+200     5KB  http://10.10.13.131/administrator/
+200     2KB  http://10.10.13.131/administrator/includes/
+200     5KB  http://10.10.13.131/administrator/index.php
+301   247B   http://10.10.13.131/administrator/logs    -> REDIRECTS TO: http://10.10.13.131/administrator/logs/
+200    31B   http://10.10.13.131/administrator/logs/
+301   232B   http://10.10.13.131/bin    -> REDIRECTS TO: http://10.10.13.131/bin/
+200    31B   http://10.10.13.131/bin/
+200    31B   http://10.10.13.131/cache/
+301   234B   http://10.10.13.131/cache    -> REDIRECTS TO: http://10.10.13.131/cache/
+403   210B   http://10.10.13.131/cgi-bin/
+200    31B   http://10.10.13.131/cli/
+301   239B   http://10.10.13.131/components    -> REDIRECTS TO: http://10.10.13.131/components/
+200    31B   http://10.10.13.131/components/
+200     0B   http://10.10.13.131/configuration.php
+200     3KB  http://10.10.13.131/htaccess.txt
+301   235B   http://10.10.13.131/images    -> REDIRECTS TO: http://10.10.13.131/images/
+200    31B   http://10.10.13.131/images/
+301   237B   http://10.10.13.131/includes    -> REDIRECTS TO: http://10.10.13.131/includes/
+200    31B   http://10.10.13.131/includes/
+200     9KB  http://10.10.13.131/index.php
+301   237B   http://10.10.13.131/language    -> REDIRECTS TO: http://10.10.13.131/language/
+200    31B   http://10.10.13.131/layouts/
+301   238B   http://10.10.13.131/libraries    -> REDIRECTS TO: http://10.10.13.131/libraries/
+200    31B   http://10.10.13.131/libraries/
+200    18KB  http://10.10.13.131/LICENSE.txt
+301   234B   http://10.10.13.131/media    -> REDIRECTS TO: http://10.10.13.131/media/
+200    31B   http://10.10.13.131/media/
+301   236B   http://10.10.13.131/modules    -> REDIRECTS TO: http://10.10.13.131/modules/
+200    31B   http://10.10.13.131/modules/
+301   236B   http://10.10.13.131/plugins    -> REDIRECTS TO: http://10.10.13.131/plugins/
+200    31B   http://10.10.13.131/plugins/
+200     4KB  http://10.10.13.131/README.txt
+200   836B   http://10.10.13.131/robots.txt
+200     0B   http://10.10.13.131/templates/system/
+200     0B   http://10.10.13.131/templates/beez3/
+200    31B   http://10.10.13.131/templates/
+301   238B   http://10.10.13.131/templates    -> REDIRECTS TO: http://10.10.13.131/templates/
+200     0B   http://10.10.13.131/templates/protostar/
+200    31B   http://10.10.13.131/templates/index.html
+200    31B   http://10.10.13.131/tmp/
+301   232B   http://10.10.13.131/tmp    -> REDIRECTS TO: http://10.10.13.131/tmp/
+200     2KB  http://10.10.13.131/web.config.txt
