@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "oh-my-zsh.md",
+                "file": "Learning/oh-my-zsh.md",
                 "mode": "source",
                 "source": false
               },
@@ -189,10 +189,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ccc877dd0a124d1a",
+  "active": "b733ae93d73f97c9",
   "lastOpenFiles": [
     "Learning/git.md",
-    "oh-my-zsh.md",
+    "Learning/oh-my-zsh.md",
     "README.md",
     "THM/Daily Bugle.md",
     "THM/images/daily-bugle-bcrypt-decrypt.png",
