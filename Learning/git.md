@@ -32,3 +32,20 @@ git commit -m 'report.md'
 git merge origin/main
 
 ```
+
+## GH
+
+```git
+gh auth login # login with browser via https
+```
+
+```git
+git init 
+touch README.md
+git add .
+git remote add origin "https://token@github.com/username/repo"
+gh repo create `repo` --public --source=. --push
+git branch -M main
+git push -u origin main
+git commit -m 'README.md'
+```

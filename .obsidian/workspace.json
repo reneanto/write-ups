@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTB/Machines/Steamcloud.md",
+                "file": "Learning/git.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Steamcloud"
+              "title": "git"
             }
           }
         ],
@@ -191,9 +191,10 @@
   },
   "active": "0a299cbe1b77257c",
   "lastOpenFiles": [
+    "Learning/Mobile-Testing.md",
+    "HTB/Machines/Steamcloud.md",
     "HTB/Machines/images/steamcloud-version.png",
     "Kali-Errors.md",
-    "HTB/Machines/Steamcloud.md",
     "Learning/git.md",
     "Learning/oh-my-zsh.md",
     "README.md",
@@ -218,13 +219,11 @@
     "THM/images/daily-bugle-web.png",
     "THM/images",
     "Learning/Python.md",
-    "Learning/Mobile-Testing.md",
     "Learning/Pivoting.md",
     "HTB/Machines/Support.md",
     "HTB/Machines/Monteverde.md",
     "HTB/Machines/Forest.md",
     "HTB/Machines/Active.md",
-    "HTB/Machines/images/Forest-DC.png",
     "Vulnlabs/Chains/Tengu.md",
     "Vulnlabs/Machines/baby2.md",
     "HTB/Machines/Buff.md",
