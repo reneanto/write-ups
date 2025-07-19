@@ -36,7 +36,7 @@ machine write ups for references
 ## TryHackMe
 
 * [Traverse](/THM/Traverse.md)
-* [DailyBugle](/THM/Daily Bugle.md)
+* [DailyBugle](/THM/Daily_Bugle.md)
 
 ## Learning
 
