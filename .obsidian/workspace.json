@@ -53,16 +53,32 @@
             "id": "2832dfc19a6dddb4",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.9.10"
+                "file": "HTB/Machines/Endgame/Casino.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.10"
+              "icon": "lucide-file",
+              "title": "Casino"
+            }
+          },
+          {
+            "id": "bb1a498634b8aea1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HTB/Machines/Endgame/AWS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AWS"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -216,8 +232,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2832dfc19a6dddb4",
+  "active": "bb1a498634b8aea1",
   "lastOpenFiles": [
+    "HTB/Machines/Endgame/Casino.md",
+    "HTB/Machines/Endgame/AWS.md",
     "README.md",
     "HTB/Machines/lock.md",
     "THM/Daily_Bugle.md",
@@ -260,8 +278,6 @@
     "Vulnlabs/Chains/tengu.md",
     "Vulnlabs/Chains/Trusted.md",
     "Vulnlabs/README.md",
-    "Learning/Active-Directory.md",
-    "HTB/Machines/TimeLapse.md",
     "Untitled",
     "Vulnlabs/Chains/Images"
   ]
