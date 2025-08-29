@@ -46,3 +46,10 @@ PORT      STATE SERVICE       REASON          VERSION
 Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 ```
+
+
+## HTTP
+
+```
+http://jobs.amzcorp.local/settings#
+```
