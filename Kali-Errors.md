@@ -40,3 +40,20 @@ sudo systemctl enable ligtdm && sudo systemctl start lightdm
 ```bash
 echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf > /dev/null
 ```
+
+## Wi-fi connect
+
+* Connect wi-fi via term
+
+``` bash
+#!/bin/bash
+
+sudo systemctl stop stop Network Manager
+sudo pkill wpa_supplicant
+sudo ip link set wlan0 set up
+#sudo ip link wlan0 scan | grep ESSID
+#sudo iwlist wlan0 scan | grep ESSID
+# sudo wpa_passphrase "SSID" "PASSWORD" | sudo tee /etc/wpa_supplicant/wpa_supplicant.conf
+sudo wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+sudo dhclient wlan0
+```
